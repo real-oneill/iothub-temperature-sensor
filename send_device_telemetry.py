@@ -14,7 +14,7 @@ import json
 #os.system('modprobe w1-therm')
 device_id = "aquasensor01"
 #conn_str = os.getenv("IOTHUB_DEVICE_CONNECTION_STRING")
-conn_str = "HostName=aquanet.azure-devices.net;DeviceId=aquasensor01;SharedAccessKey=nE2OEKZrtJG9G2uw7SnVBxm1npe4uylOX1UX1u2CeSU="
+conn_str = "HostName=aquanet.azure-devices.net;DeviceId=aquasensor01;SharedAccessKey={SASKeyHere}"
 base_dir = '/sys/bus/w1/devices/'
 device_folder = glob.glob(base_dir + '28*')[0]
 device_file = device_folder + '/w1_slave'
